@@ -8,7 +8,7 @@ The purpose of this analysis is to make the data on UFO sightings more usable fo
 
 A user can now use the webpage to filter by search criteria. Page visitors can type in their search criteria for each field, and then press enter to trigger the search. The program will check to see what has changed in each field, and adjust the search criteria as needed, then create a new table with only the rows meeting the criteria. 
 
-### Use Examples
+### How to use the filters
 
 - Users may type in their criteria, following the examples set by the placeholder text.
 
