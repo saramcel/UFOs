@@ -11,16 +11,20 @@ A user can now use the webpage to filter by search criteria. Page visitors can t
 ### Use Examples
 
 - Users may type in their criteria, following the examples set by the placeholder text.
+
 ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
 
 - Users may use as many or few criteria as they would like.
   - Example 1: Use only a few filters on the data.
+
 ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
 
   - Example 2: Use all filters to find an exact incident.
- ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
   
 - By clearing the criteria, users can access the whole database again.
+
 ![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
 
 ### Code
@@ -85,24 +89,18 @@ function updateFilters() {
 
 ## Summary
 
-In a summary statement, describe one drawback of this new design and two recommendations for further development.
-Deliverable 2 Requirements
-Structure, Organization, and Formatting (8 points)
-The written analysis has the following structure, organization, and formatting:
+To summarize, there is one key drawback of this data filtering design, and two recommended developments that could improve user experience in the future. 
 
-There is a title, and there are multiple paragraphs. (2 pt)
-Each paragraph has a heading. (2 pt)
-There are subheadings to break up text. (2 pt)
-Images are formatted and displayed where appropriate. (2 pt)
-Analysis (12 points)
+- Main drawback of this approach to filtering UFO sighting data:
+  - The user input must match exactly--this means if there is any variation at all, the matches will not be returned. For example, the current filters are case-sensitive, and they will not find common format variations of date (e.g. "01/01/2010" returns nothing, while "1/1/2010" returns data). 
 
-## The written analysis has the following:
-
-Overview of the analysis:
-The purpose is well defined (2 pt)
+- Recommendation 1:
+  - Reduce user error in input filters by adding drop-down menus and a clickable date entry field. 
+  - After quick web search, it appears that the drop-down menus can be accomplished with code from [W3 Schools](https://www.w3schools.com/howto/howto_js_dropdown.asp).
+  - Here is an example of how to create a clickable calendar in javascript from [That software dude, part 1](https://www.thatsoftwaredude.com/content/6396/coding-a-calendar-in-javascript), and [part 2](https://www.thatsoftwaredude.com/content/8914/coding-a-calendar-in-javascript-part-2).
  
 
-
-Summary:
-The summary addresses one drawback of this webpage (2 pt)
-The summary addresses two additional recommendations for further development (4 pt)
+- Recommendation 2:
+  - Add a sorting function so that the user can have more control over what the output looks like. 
+  - Sorting the geographical and shape components alphabetically can be accomplished with the following code from [W3 Schools](https://www.w3schools.com/howto/howto_js_sort_table.asp).
+  - Sorting by date is a little more complicated, but if we adjust how the date is formatted in the data, the following code might work from [Stack abuse](https://stackabuse.com/how-to-sort-an-array-by-date-in-javascript/). 
