@@ -12,27 +12,27 @@ A user can now use the webpage to filter by search criteria. Page visitors can t
 
 - Users may type in their criteria, following the examples set by the placeholder text.
 
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![Placeholder text](https://github.com/saramcel/UFOs/blob/66eb9e513850ec44a265f28c1f8bae5d148850d0/UFOs-Challenge/static/images/Challenge-placeholders.png)
 
 - Users may use as many or few criteria as they would like.
   - Example 1: Use only a few filters on the data.
 
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![Two fitlers](https://github.com/saramcel/UFOs/blob/66eb9e513850ec44a265f28c1f8bae5d148850d0/UFOs-Challenge/static/images/Challenge-two_filters.png)
 
   - Example 2: Use all filters to find an exact incident.
 
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![All filters](https://github.com/saramcel/UFOs/blob/66eb9e513850ec44a265f28c1f8bae5d148850d0/UFOs-Challenge/static/images/Challenge-all_filters.png)
   
 - By clearing the criteria, users can access the whole database again.
 
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![No filters](https://github.com/saramcel/UFOs/blob/66eb9e513850ec44a265f28c1f8bae5d148850d0/UFOs-Challenge/static/images/Challenge-no_filters.png)
 
 ### Code
 
 The code works by listening for a change to the filter fields, then updating the filter list, then matching each key from the filter list to the data key, and then setting the values for that key equal to the value provided by the user, then returning just those rows.
 
 1. The code listens for a change using a D3 event.
-> d3.selectAll("input").on("change", updateFilters);
+  > d3.selectAll("input").on("change", updateFilters);
 
 2. The code updates the list of filters with the id and value of the changed elements. First it extracts the value of the user input, then the id of the html element, then then it adds to the list called `filters` and assures that any unused filters that may be in the list are deleted. Then it calls the next function `filterTable` and adds the `filters` list as an argument.
 ```
