@@ -1,10 +1,12 @@
 // import the data from data.js
 const tableData = data;
-// Reference the HTML table using d3
-var tbody = d3.select("tbody");
+
 
 //function to build the table
 function buildTable(data) {
+    // Reference the HTML table using d3
+    var tbody = d3.select("tbody");
+    
     // first clear the table of any old data
     tbody.html("");
     
