@@ -2,11 +2,11 @@
 
 ## Overview
 
-The purpose of this analysis is to make the data on UFO sightings more usable for the public. The UFO sightings are in a javascript database, and we are asked to create a series of fitlers so that users can find sightings of interest. The site containing the data can be filtered by date, city, state, country, and shape of the UFO.  
+The purpose of this analysis is to make the data on UFO sightings more usable for the public. The UFO sightings are in a javascript database, and we are asked to create a series of filters so that users can find sightings of interest. The site containing the data can be filtered by date, city, state, country, and shape of the UFO.  
 
 ## Results
 
-A user can now use the webpage to filter by search criteria. Page visitors can type in their search criteria for each field, and then press enter to trigger the search. The program will check to see what has changed in each field, and adjust the search criteria as needed, then create a new table with only the rows meeting the criteria. 
+A user can now use the webpage to filter by search criteria. Page visitors can type in their search criteria for each field to trigger the search. The program will check to see what has changed in each field, adjust the search criteria as needed, and then create a new table with only the rows meeting the criteria. 
 
 ### How to use the filters
 
@@ -98,7 +98,6 @@ To summarize, there is one key drawback of this data filtering design, and two r
   - Reduce user error in input filters by adding drop-down menus and a clickable date entry field. 
   - After quick web search, it appears that the drop-down menus can be accomplished with code from [W3 Schools](https://www.w3schools.com/howto/howto_js_dropdown.asp).
   - Here is an example of how to create a clickable calendar in javascript from [That software dude, part 1](https://www.thatsoftwaredude.com/content/6396/coding-a-calendar-in-javascript), and [part 2](https://www.thatsoftwaredude.com/content/8914/coding-a-calendar-in-javascript-part-2).
- 
 
 - Recommendation 2:
   - Add a sorting function so that the user can have more control over what the output looks like. 
